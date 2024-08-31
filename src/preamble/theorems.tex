@@ -10,8 +10,34 @@
         leftline=false, rightline=false, topline=false, bottomline=false,
         backgroundcolor=gray!15,
     }
-]{important}
-\declaretheorem[style=important,name=Important,numbered=no]{important}
+]{important-style}
+\declaretheorem[style=important-style,name=Important,numbered=no]{important}
+
+\newmdenv[
+    backgroundcolor=cyan!5,
+    linewidth=0pt,
+    innertopmargin=0pt,
+    innerbottommargin=10pt,
+    innerleftmargin=10pt,
+    innerrightmargin=10pt,
+    skipabove=10pt,
+    skipbelow=10pt,
+    roundcorner=0pt,
+    frametitlefont=\bfseries,
+    frametitlealignment=\centering,
+    frametitlebackgroundcolor=cyan!5,
+    nobreak=true
+]{definition-theorem}
+
+\newenvironment{definition}[1]{%
+  \begin{center}
+  \begin{minipage}{0.8\textwidth} % Set the width to 80% of the text width
+  \begin{definition-theorem}[frametitle=#1]
+}{%
+  \end{definition-theorem}
+  \end{minipage}
+  \end{center}
+}
 
 % \usepackage{thmtools}
 % \usepackage[usenames,dvipsnames]{xcolor}
