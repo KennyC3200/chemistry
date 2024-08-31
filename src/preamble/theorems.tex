@@ -1,3 +1,18 @@
+\usepackage{thmtools}
+\usepackage[most]{tcolorbox}
+\usepackage[framemethod=TikZ]{mdframed}
+
+\declaretheoremstyle[
+    headfont=\bfseries\sffamily, 
+    bodyfont=\normalfont, 
+    mdframed={
+        nobreak,
+        leftline=false, rightline=false, topline=false, bottomline=false,
+        backgroundcolor=gray!15,
+    }
+]{important}
+\declaretheorem[style=important,name=Important,numbered=no]{important}
+
 % \usepackage{thmtools}
 % \usepackage[usenames,dvipsnames]{xcolor}
 % \usepackage[most]{tcolorbox}
