@@ -1,0 +1,101 @@
+\lesson{Quantum Theory and Quantum Numbers}
+\subsection{Flaw with Rutherford's Model}
+\begin{bulleted-list}
+    \item Rutherford believed that the electrons orbited around the nucleus like planets
+    \item Only problem was that they should be emitting energy, meaning that they would eventually
+        collapse into the nucleus
+    \item This would leave the atom unsdtable, so chemists knew this was not the case
+\end{bulleted-list}
+
+\subsection{Bohr's Model}
+\begin{bulleted-list}
+    \item Electrons do move in a circular orbit around the nucleus, with the motion described
+        by classical physics
+    \item Electrons have only a \textbf{fixed set of allowed orbits}, called \textbf{stationary states}.
+        Stationary in the sense that the energy is constant
+        As long as an electron remains in its orbit, its energy is constant and gives off no energy
+    \item An electron can only pass from one allowed orbit to another. That is, electrons cannot
+        lie between orbits
+    \item Bohr observed the spectrum lines when observing hydrogen. The non-continuous
+        colours suggested only certain energies were released. See Figure \ref{fig:hydrogen-spectrum-lines}
+    \item There are two states for electrons:
+        \begin{enum}
+            \item \textbf{Ground state:} the ``expected'' arrangement of electrons. This is because
+                this is the lowest amount of energy the electrons can possess
+            \item \textbf{Excited state:} When an electron temporarily occupies an energy state higher
+                than its ground state--it is moving between energy levels. The more energy the 
+                electron absorbed, the higher the energy levels the electrons can move to.
+                Eventually, the electron returns back to the ground state, releasing energy
+                in the form of \textbf{photons}
+            \item In other words, under normal circumstances, in the ground state, the electrons
+                occupy the energy levels which they should--the electron in hydrogen is in the first
+                energy level. But, if we were to add energy to hydrogen, the excited state of
+                the electron could occupy the second, third, or even fourth energy level. Once
+                the energy is released, the electron will come back down to the ground state
+            \item The dark line spectrum is what we observe when electrons gain energy and move
+                to higher energy levels. These dark lines indicate the amount of energy that was
+                absorbed when they moved
+        \end{enum}
+\end{bulleted-list}
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=0.6 \textwidth]{../figures/hydrogen-spectrum-lines.png}
+    \caption{Because there are so many atoms, and thus a lot of electrons, in a sample of hydrogen 
+            gas, there would be a continuous spectrum and not individual lines. These lines indicate
+            that energy is released in quanta and not continuous}
+    \label{fig:hydrogen-spectrum-lines}
+\end{figure}
+
+\subsection{Quantum Theory}
+The energy of a photon of electromagnetic radiation is \textbf{proportional} to its frequency,
+not to its intensity/brightness as had been believed up to that time. This is used to derive
+the Planck equation
+\[
+    E=h\nu
+\]
+Where $E$ is the energy, $h=6.63\times10^{-34}\,\si{J.s}$, the Planck constant, and $\nu=$ the
+frequency of the wave.\\
+
+There are 4 distinct numbers, coupled together as coordinates, to represent the location of
+an electron in an atom. This is called \textbf{quantum numbers}
+
+\begin{enum}
+    \item \textbf{Principle quantum number:} this represents the energy level in the atom.
+        Denoted by $n$, it has the range
+        \begin{align*}
+            \text{theoretical: }&[1,\,\infty)\\
+            \text{practical: }&[1,\,7]\quad\text{7 periods on the periodic table}
+        \end{align*}
+        The theoretical number of total electrons given a quantum number is $2n^2$. This is the 
+        only quantum number that matters, because the other numbers are considered ``labels''
+    \item \textbf{Secondary quantum number:} this represents the shape of the orbital.
+        Denoted by $\ell$, it has the range 
+        \begin{align*}
+            \text{theoretical: }&[0,\,n-1]\\
+            \text{practical: }&[0,\,4]\\
+            \text{notation }&(s,\,p,\,d,\,f)
+        \end{align*}
+        \begin{bulleted-list}
+            \item \textbf{Arnold Sommerfeld} expanded on Bohr's theory when he realized many
+                of the lines Bohr observed were actually \textbf{multiple lines} very tighly
+                together
+            \item Sommerfield decided to split energy levels into \textbf{sub-energy} levels,
+                having only slightly different energies. This is how they derived the secondary 
+                quantum number
+        \end{bulleted-list}
+    \item \textbf{Magnetic quantum number:} this represents the orientation of the orbital. Denoted
+        by $m_\ell$, it has the range
+        \[
+            m_\ell\in[-\ell,\,\ell]
+        \]
+    \item \textbf{Spin quantum number:} this represents the spin of the electron in the orbital.
+        Denoted by $m_s$, it has the range
+        \[
+            m_s\in[-\frac{1}{2},\,+\frac{1}{2}]
+        \]
+        Where $+\frac{1}{2}$ corresponds to ``spin up'' and $-\frac{1}{2}$ corresponds to
+        ``spin down''. This was introduced because when they experimented with hydrogen, some
+        electrons repelled, and some attracted. Therefore, they concluded that the way the electron
+        must be spinning around the nucleus is different
+\end{enum}
