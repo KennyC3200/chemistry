@@ -1,0 +1,126 @@
+\lesson{Introduction to Enthalpy}
+The part of the universe one chooses to study is called a \textbf{system}. The three types of
+systems are
+\begin{enum}
+    \item \textbf{Open system:} one system that can exchange both matter and energy with its
+        surroundings
+    \item \textbf{Closed system:} one that can exchange energy with its surroundings, but not matter
+    \item \textbf{Isolated system:} one that exchanges neither energy nor matter with its
+        surroundings
+\end{enum}
+
+\subsection{Enthalpy}
+Energy transfers can either occur as heat ($q$) or as work ($w$). Energy transfer affects the total
+energy contained within a system; that is, its internal energy ($E$).\\
+
+The components of internal energy that interests us, as Chemists, are:
+\begin{bulleted-list}
+    \item \textbf{Thermal energy:} energy associated with random molecular motion
+    \item \textbf{Chemical energy:} energy associated with chemical bonds and intermolecular forces
+\end{bulleted-list}
+Enthalpy is denoted by $H$ and represents the sum of the internal energy and the pressure-volume
+product of the system
+\[
+    H=E+PV
+\]
+In a lab context, the pressure is generally constant, thus the change in enthalpy is
+\[
+    \Delta H=\Delta E+P\Delta V
+\]
+\textbf{Note:} Since $P\Delta V$ is usually negligible, especially when dealing with solids or
+liquids, we can simply say $\Delta H\approx\Delta E$.\\
+
+Thus, $H$ is the heat content of a system and $\Delta H$ is the enthalpy change of a reaction.
+To determine the type of reaction, we need to consider the sign of $\Delta H$
+\begin{bulleted-list}
+    \item For an \textbf{endothermic reaction}, $\Delta H>0$
+    \item For an \textbf{exothermic reaction}, $\Delta H<0$
+\end{bulleted-list}
+The internal energy of a system is known as a \textbf{function state}. This means that the internal
+energy, and thus enthalpy, depends on temperature, pressure, kind of substance, and amount of 
+substance present.
+
+\subsection{Molar Enthalpy}
+The molar enthalpy, denoted by $\Delta H_x$, is the enthalpy change associated with a chemical,
+physical, or nuclear change mole of a particular substance.
+\[
+    \Delta H_x=\frac{\Delta H}{n}
+\]
+In other words, molar enthalpy is just a rate of enthalpy, with respect to moles.
+
+\subsection{Measuring Energy Change}
+For most chemical reactions, it is very difficult to measure the energy change of a substance
+through an entire reaction. Most significantly, because the chemicals change into new substances;
+therefore, what is present at the beginning is different than what is produced.\\
+
+Therefore, chemists most often measure energy changes \textbf{indirectly} using devices called
+calorimeters and calculating the energy change of the surroundings to infer the energy change of
+the chemical system.
+\[
+    \Delta H_\text{system}=-q_\text{surroundings}
+\]
+This relationship exists because the energy lost by the system will be gained by the surroundings,
+and vice versa. This is via the conservation of energy.
+
+\subsection{Calculating Energy Change}
+The heat energy can be calculated by using the equation
+\[
+    q=mc\Delta T
+\]
+Recall that $m$ is the mass, $c$ is the specific heat capacity, and $\Delta T$ is the change in
+temperature, in degrees celsius.
+
+\begin{table}[!ht]
+    \scriptsize
+    \centering
+    \caption{Molar enthalpies for changes in states of selected substances}
+    \setlength{\tabcolsep}{10pt}      % column spacing
+    \renewcommand{\arraystretch}{1.2} % row spacing
+    \arrayrulecolor{black}            % table border color
+    \begin{tabular}{|c|c|c|c|}
+        \hline
+        \rowcolor{HeaderColor}
+        Chemical formula & Formula & Molar enthalpy of fusion (kJ/mol) & Molar enthalpy of evaporation (kJ/mol) \\ \hline
+        sodium & $\ch{Na}$ & 2.6 & 101 \\ \hline
+        chlorine & $\ch{Cl2}$ & 6.4 & 20.4 \\ \hline
+        sodium chloride & $\ch{NaCl}$ & 28 & 171 \\ \hline
+        water & $\ch{H2O}$ & 6.03 & 40.8 \\ \hline
+        ammonia & $\ch{NH3}$ & - & 1.37 \\ \hline
+        freon-12 & $\ch{CCl2F2}$ & - & 34.99 \\ \hline
+        methanol & $\ch{CH3OH}$ & - & 39.23 \\ \hline
+        ethylene glycol & $\ch{C2H4(OH)2}$ & - & 58.8 \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{sample}{A common refrigerant, Freon-12, molar mass 120.91 g/mol, is alternately vaporized
+    in test tubes inside a refrigerator, absorbing heat, and condensed in tubes outside the
+    refrigerator, releasing heat. This results in energy being transferred from the inside to
+    the outside of the refrigerator. The molar enthalpy of vaporized for the refrigerant is
+    34.99 kJ/mol. If 500.0 g of the refrigerant is vaporized, what is the expected enthalpy
+    change $\Delta H$?}
+    Solve for the number of moles of Freon-12
+    \begin{align*}
+        n&=\frac{500.0\,\si{g}}{120.91\,\si{g.mol^{-1}}}\\
+         &=4.13497\,\si{mol}
+    \end{align*}
+    Multiply the number of moles by the molar enthalpy
+    \begin{align*}
+        \Delta H&=(4.13497\,\si{mol})(34.99\,\si{kJ.mol^{-1}})\\
+                &=144.6826\,\si{kJ}
+    \end{align*}
+\end{sample}
+
+\begin{sample}{What amount of ethylene glycol would vaporize while absorbing 200.0 kJ of heat?}
+    The enthalpy of vaporization of ethylene glycol is 58.8 \si{kJ.mol^{-1}}. Using the formula
+    for enthalpy heat, we can solve for $n$
+    \begin{align*}
+        \Delta H_\text{vap}&=\frac{\Delta H}{n}\\
+        n&=\frac{\Delta H}{\Delta H_\text{vap}}\\
+         &=\frac{200.0\,\si{kJ}}{58.8\,\si{kJ.mol^{-1}}}\\
+         &=3.40\,\si{mol}
+    \end{align*}
+    Therefore, the amount of ethylene glycol evaporated is 3.40 mol.
+\end{sample}
+
+\begin{sample}{Calculate the enthalpy change for the vaporization of 100.0 g of water at 100.0 }
+\end{sample}
