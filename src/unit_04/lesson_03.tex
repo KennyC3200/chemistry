@@ -1,0 +1,97 @@
+\lesson{The Reaction Quotient}
+\subsection{Equilibrium Establishment}
+\begin{bulleted-list}
+    \item When the reactants and products for a particular chemical reaction are combined, it
+        is useful to know whether is mixture is at equilibrium or not. When it is not, it is
+        necessary to know how the system will change in order to establish equilibrium
+    \item This change in equilibrium is typically referred to as a \textit{shift}
+    \item A shift \textbf{to the right} means that the concentration of the \textbf{products} will
+        increase to reach equilibrium
+    \item A shift \textbf{to the left} means that the concentration of the \textbf{reactants} will
+        increase to reach equilibrium
+\end{bulleted-list}
+
+Determining the \textit{shift} in position is very simple if the concentration of any one of the
+reactants or products is 0:
+\begin{bulleted-list}
+    \item The system must shift in the direction of the missing component(s)
+    \item This is because it is impossible to reach equilibrium if one of the components is missing
+\end{bulleted-list}
+
+\subsection{The Reaction Quotient}
+\begin{bulleted-list}
+    \item When all of the initial concentrations are non-zero, then the reaction quotient, denoted
+        by $Q$, is used to determine the shift that is required to establish equilibrium
+    \item The reaction quotient uses the equilibrium constant expression for the reaction;
+        however, the \textbf{initial concentrations} are used in the equation, rather than the
+        equilibrium concentrations
+\end{bulleted-list}
+For instance, in the reaction $\ch{N2_{(g)}}+3 \ch{H2_{(g)}}\rightleftharpoons2 \ch{NH3_{(g)}}$ 
+\[
+    Q=\frac{[\ch{NH3}]^2_o}{[\ch{N2}]_o[\ch{H2}]^3_o}
+\]
+Where the subscripted $o$ denotes that it is the \textbf{initial concentration}.\\
+
+Recalling that $Q$ and $K$ measure the ratio between the concentrations of the products to reactants,
+we can compare the values of $Q$ to $K$ to assert the following
+\begin{bulleted-list}
+    \item When $Q>K$
+        \begin{bulleted-list}
+            \item The initial concentration ratio between products to reactants is \textbf{too large}
+            \item Some products will be consumed to form reactants in equilibrium
+            \item The system shifts \textbf{left} to reach a state of equilibrium
+        \end{bulleted-list}
+    \item When $Q<K$
+        \begin{bulleted-list}
+            \item The initial concentration ratio between products to reactants is \textbf{too little}
+            \item Some reactants will be consumed to form products in equilibrium
+            \item The system shift \textbf{right} to reach a state of equilibrium
+        \end{bulleted-list}
+    \item When $Q=K$
+        \begin{bulleted-list}
+            \item The initial concentration represents a system that is already in a state of
+                equilibrium
+            \item The system will undergo no shift
+        \end{bulleted-list}
+\end{bulleted-list}
+
+\begin{sample}{For the synthesis of ammonia at $500^{\circ}$C, the equilibrium constant is $K=6.0\times10^{-2}$.
+    Predict the direction that the system must shift in order to establish equilibrium for the
+    following ``initial concentration'' scenarios.
+    \begin{table}[!ht]
+        \footnotesize
+        \centering
+        \setlength{\tabcolsep}{12pt}      % column spacing
+        \renewcommand{\arraystretch}{1.2} % row spacing
+        \arrayrulecolor{black}            % table border color
+        \begin{tabular}{|c|c|c|c|}
+            \hline
+            Experiment & [$\ch{N2}$] & [$\ch{H2}$] & [$\ch{NH3}$] \\ \hline
+            1 & $1.0\times10^{-5}$ & $2.0\times10^{-3}$ & $1.0\times10^{-3}$ \\ \hline
+            2 & $1.5\times10^{-5}$ & $3.54\times10^{-1}$ & $2.0\times10^{-4}$ \\ \hline
+            3 & $5.0$ & $1.0\times10^{-2}$ & $1.0\times10^{-4}$ \\ \hline
+        \end{tabular}
+    \end{table}
+}
+    For experiment 1, the value for $Q$ is
+    \begin{align*}
+        Q&=\frac{[\ch{NH3}]^2}{[\ch{N2}][\ch{H2}]^3}\\
+         &=\frac{(1.0\times10^{-3})^2}{(1.0\times10^{-5})(2.0\times10^{-3})^3}\\
+         &=1.25\times10^{7}
+    \end{align*}
+    Since $Q>K$, the reaction shifts to the left.\\
+    For experiment 2, the value for $Q$ is
+    \begin{align*}
+        Q&=\frac{[\ch{NH3}]^2}{[\ch{N2}][\ch{H2}]^3}\\
+         &=\frac{(2.0\times10^{-4})^2}{(1.5\times10^{-5})(3.54\times10^{-1})^3}\\
+         &=0.06
+    \end{align*}
+    Since $Q\approx K$, the reaction has no shift.\\
+    For experiment, 3, the value for $Q$ is
+    \begin{align*}
+        Q&=\frac{[\ch{NH3}]^2}{[\ch{N2}][\ch{H2}]^3}\\
+         &=\frac{(1.0\times10^{-4})^2}{(5.0)(1.0\times10^{-2})^3}\\
+         &=0.002
+    \end{align*}
+    Since $Q<K$, the reaction will shift right.
+\end{sample}

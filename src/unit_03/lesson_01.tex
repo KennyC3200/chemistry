@@ -1,6 +1,10 @@
 \lesson{Introduction to Enthalpy}
 The part of the universe one chooses to study is called a \textbf{system}. The three types of
 systems are
+\footnote{
+    \textbf{Thermochemistry:} the study of energy changes that accompany physical or chemical changes
+    of matter.
+}
 \begin{enum}
     \item \textbf{Open system:} one system that can exchange both matter and energy with its
         surroundings
@@ -10,13 +14,25 @@ systems are
 \end{enum}
 
 \subsection{Enthalpy}
-Energy transfers can either occur as heat ($q$) or as work ($w$). Energy transfer affects the total
+Energy transfers can either occur as heat ($q$)
+\footnote{
+    \textbf{Heat:} the amount of energy transferred between substances.
+}
+or as work ($w$). Energy transfer affects the total
 energy contained within a system; that is, its internal energy ($E$).\\
 
 The components of internal energy that interests us, as Chemists, are:
 \begin{bulleted-list}
     \item \textbf{Thermal energy:} energy associated with random molecular motion
+        \footnote{
+            \textbf{Thermal energy:} energy available from a substance as a result of the motion
+            of its molecules.
+        }
     \item \textbf{Chemical energy:} energy associated with chemical bonds and intermolecular forces
+        \footnote{
+            \textbf{Chemical system:} a set of reactants and products under study, usually
+            represented by a chemical equation
+        }
 \end{bulleted-list}
 Enthalpy is denoted by $H$ and represents the sum of the internal energy and the pressure-volume
 product of the system
@@ -48,19 +64,35 @@ physical, or nuclear change mole of a particular substance.
 \]
 In other words, molar enthalpy is just a rate of enthalpy, with respect to moles.
 
-\subsection{Measuring Energy Change}
+\subsection{Measuring Energy Change (Enthalpy Change)}
+Enthalpy change is the difference in enthalpies between the reactants and products during a change.
 For most chemical reactions, it is very difficult to measure the energy change of a substance
 through an entire reaction. Most significantly, because the chemicals change into new substances;
 therefore, what is present at the beginning is different than what is produced.\\
 
 Therefore, chemists most often measure energy changes \textbf{indirectly} using devices called
-calorimeters and calculating the energy change of the surroundings to infer the energy change of
+calorimeters
+\footnote{
+    \textbf{Calorimetry:} the technological process of measuring energy changes in a chemical
+    system.
+}
+and calculating the energy change of the surroundings to infer the energy change of
 the chemical system.
 \[
     \Delta H_\text{system}=-q_\text{surroundings}
 \]
 This relationship exists because the energy lost by the system will be gained by the surroundings,
-and vice versa. This is via the conservation of energy.
+and vice versa. This is via the conservation of energy.\\
+
+The three different types of enthalpy changes are
+\begin{enum}
+    \item \textbf{Physical change:} a change in the form of a substance, in which no chemical
+        bonds are broken
+    \item \textbf{Chemical change:} a change in the chemical bonds between atoms, resulting in the
+        arrangement of atoms into new substances
+    \item \textbf{Nuclear change:} a change in the protons or neutrons in an atom, resulting in
+        the formation of new atoms
+\end{enum}
 
 \subsection{Calculating Energy Change}
 The heat energy can be calculated by using the equation
@@ -122,5 +154,46 @@ temperature, in degrees celsius.
     Therefore, the amount of ethylene glycol evaporated is 3.40 mol.
 \end{sample}
 
-\begin{sample}{Calculate the enthalpy change for the vaporization of 100.0 g of water at 100.0 }
+\begin{sample}{Calculate the enthalpy change for the vaporization of 100.0 g of water at 100.0 \celsius.}
+    From the formula $\Delta H_x=\frac{\Delta H}{n}$, $\Delta H=n\Delta H_x$, all we need to solve
+    for is $n$ then multiply it by $\Delta H_x$
+    \begin{align*}
+        n&=\frac{100.0\,\si{g}}{16.00\,\si{g.mol^{-1}}+2(1.01\,\si{g.mol^{-1}})}\\
+         &=5.54938957\,\si{mol}\\
+        \Delta H&=(5.54938957\,\si{mol})(40.8\,\si{kJ.mol^{-1}})\\
+                &=226.415\,\si{kJ}
+    \end{align*}
 \end{sample}
+
+\begin{sample}{Ethylene glycol is used in automobile coolant systems because its aqueous solutions
+    lower the freezing point of the coolant liquid to prevent freezing of the system during
+    Canadian winters. What is the enthalpy change needed to completely vaporize 500.0 g of ethylene
+    glycol?}
+    Using the formula for molar enthalpy and solving for enthalpy change $\Delta H=n\Delta H_\text{vap}$
+    \begin{align*}
+        n&=\frac{500.0\,\si{g}}{2(12.01\,\si{g.mol^{-1}})+6(1.01\,\si{g.mol^{-1}})+2(16.00\,\si{g.mol^{-1}})}\\
+         &=8.05412\,\si{mol}\\
+        \Delta H&=n\Delta H_\text{vap}\\
+                &=(8.05412\,\si{mol})(58.8\,\si{kJ.mol^{-1}})\\
+                &=473.58\,\si{kJ}
+    \end{align*}
+\end{sample}
+
+\subsection{Calorimetry of Physical Changes}
+Studying energy change requires an isolated system. Two nested disposable polystyrene cups are
+a fairly effective calorimeter. There are three simplifying assumptions often used in calorimetery:
+\begin{enum}
+    \item No heat is transferred between the calorimeter and the outside environment
+    \item Any heat absorbed or released by the calorimeter materials, such as the container, is
+        negligible
+    \item A dillute aqeuous solution is assumed to have a density and specific heat capacity equal
+        to that of pure water (1.00 g/mL and 4.18 J/(g\celsius))
+\end{enum}
+\textbf{Note:} what this section boils down to is using specific heat capacity and enthalpy change
+to calculate the molar enthalpy, and vice versa.
+
+\subsection{Calorimetry of Chemical Changes}
+Chemical reactions are also studied using calorimeters. This setup usually involves aqeuous 
+reactant solutions that are considered to be equivalent to water (recall the three rules). Thus,
+the procedure is the same as the ones in the caorimetry of physical changes. When aqueous 
+solutions of acids and bases react, they neutralize, while producing enthalpy.
