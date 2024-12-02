@@ -1,5 +1,6 @@
 src/figures/shrek.png
 src/test/
+resources/
 .DS_Store
 
 *.aux
