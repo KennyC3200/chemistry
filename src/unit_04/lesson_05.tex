@@ -102,3 +102,49 @@ Note that there is no denominator in this case because the reactants are solids.
 \end{sample}
 
 \subsection{Precipitation}
+The $K_\mathrm{sp}$ value can also be used to predict whether or not a precipitate will form when
+two solutions are mixed. Calculate the reaction quotient, $Q$, and compare it to $K_\mathrm{sp}$.
+\begin{bulleted-list}
+    \item If $Q<K_\mathrm{sp}$, the solution is unsaturated; therefore, \textbf{no precipitate}
+    \item If $Q>K_\mathrm{sp}$, the solution is saturated; therefore, there \textbf{is precipitate}
+    \item If $Q=K_\mathrm{sp}$, the solution is exactly at the saturation point; therefore, \textbf{no precipitate}
+\end{bulleted-list}
+
+\begin{sample}{Will a precipitate form if 25.0 mL of 0.00400 M aluminum hydroxide solution 
+    mixed with 25.0 mL of 0.0150 M calcium nitrate solution? $K_\mathrm{sp}$ for $\ch{Ca(OH)2}$
+    is $6.5\times10^{-6}$.}
+    Note that this is a double displacement reaction, which is why we are given the $K_\mathrm{sp}$
+    for $\ch{Ca(OH)2}$. To determine if a precipitate will form, we need to calculate for $Q$ and
+    compare it with $K_\mathrm{sp}$. To calculate $Q$, we need to determine $[\ch{Ca^{2+}_{(aq)}}]$
+    and $[\ch{OH^-_{(aq)}}]$. One important thing to keep in mind is that the combined volume of
+    the two solutions is 50 mL. For $\ch{Al(OH)3}$
+    \begin{align*}
+        C_1V_1&=C_2V_2\\
+        C_2&=\frac{C_1V_1}{V_2}\\
+           &=\frac{(0.004\,\si{M})(25\,\si{mL})}{50\,\si{mL}}\\
+           &=0.002\,\si{M}
+    \end{align*}
+    For $\ch{Ca(NO3)2}$
+    \begin{align*}
+        C_1V_1&=C_2V_2\\
+        C_2&=\frac{C_1V_1}{V_2}\\
+           &=\frac{(0.015\,\si{M})(25\,\si{mL})}{50\,\si{mL}}\\
+           &=0.0075\,\si{M}
+    \end{align*}
+    Therefore, the concentrations we need are
+    \begin{align*}
+        [\ch{OH^-_{(aq)}}]&=3[\ch{Al(OH)3}]=3(0.002\,\si{M})=0.006\,\si{M}\\
+        [\ch{Ca^{2+}_{(aq)}}]&=[\ch{Ca(NO3)2}]=0.0075\,\si{M}
+    \end{align*}
+    The BCE for the dissociation reaction is
+    \[
+        \ch{Ca(OH)2_{(s)}}\rightleftharpoons \ch{Ca^{2+}_{(aq)}}+\ch{2OH^-_{(aq)}}
+    \]
+    Therefore, the $Q$ value is
+    \begin{align*}
+        Q&=[\ch{Ca^{2+}_{(aq)}}][\ch{OH^-_{(aq)}}]^2\\
+         &=(0.0075)(0.06)^2\\
+         &=2.70\times10^{-7}
+    \end{align*}
+    Since $Q<K_\mathrm{sp}$, the solution is unsaturated, and no precipitate is formed.
+\end{sample}

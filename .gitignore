@@ -12,3 +12,8 @@ resources/
 *.toc
 *.out
 *.latexmain
+
+!src/unit_01/unit_01.pdf
+!src/unit_02/unit_02.pdf
+!src/unit_03/unit_03.pdf
+!src/unit_04/unit_04.pdf
