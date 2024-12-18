@@ -1,0 +1,66 @@
+\lesson{Acid and Base Dissociation Constants}
+Water undergoes \textbf{autoionization}. Roughly, there are 1 in a billion successful collisions in pure 
+water at SATP.
+\begin{align*}
+    K_w&=1.4\times10^{-14}\\
+    [\ch{H3O^+_{(aq)}}]&=1.0\times10^{-7}\\
+    [\ch{OH^-_{(aq)}}]&=1.0\times10^{-7}\\
+\end{align*}
+
+Similar to the solubility product constant, the acid and base dissociation constants are calculated
+via writing the balanced dissociation equation and plugging in the concentrations.\\
+
+Keep in mind that strong acids have a percent reaction >99\%, thus we do not consider equilibrium.
+For a weak acid however, because their percent reaction <99\%, we can consider their equilibrium.
+For a weak acid $\ch{HA_{(aq)}}$
+\[
+    \ch{HA_{(aq)}}+\ch{H2O_{(\ell)}}\rightleftharpoons \ch{H3O^+_{(aq)}}+\ch{A^-_{(aq)}}
+\]
+The acid dissociation constant is
+\[
+    K_a=\frac{[\ch{H3O^+_{(aq)}}][\ch{A^-_{(aq)}}]}{\ch{HA_{(aq)}}}
+\]
+
+\begin{important}
+    Fluoric acid, $\ch{HF_{(aq)}}$, is actually a \textbf{strong acid}. This is because fluorine
+    is extremely electronegative.
+\end{important}
+
+Keep in mind that for polyprotic acids, they actually undergo a series of equilibrium reactions.
+Consider for instance the weak acid $\ch{H3PO4_{(aq)}}$, which is triprotic and actually undergoes 
+three different equilibrium reactions simultaneously, which each successive reaction become
+weaker than the previous.
+\begin{align*}
+    \ch{H3PO4_{(aq)}}+\ch{H2O_{(\ell)}}\rightleftharpoons \ch{H3O^+_{(aq)}}+\ch{H2PO4^-_{(aq)}}\\
+    \ch{H2PO4^-_{(aq)}}+\ch{H2O_{(\ell)}}\rightleftharpoons \ch{H3O^+_{(aq)}}+\ch{HPO4^{2-}_{(aq)}}\\
+    \ch{H2PO4^{2-}_{(aq)}}+\ch{H2O_{(\ell)}}\rightleftharpoons \ch{H3O^+_{(aq)}}+\ch{PO4^-_{(aq)}}\\
+\end{align*}
+In most cases, the latter 2 reactions are negligible since the acid gets progressively weaker. 
+Furthermore, there is a $\ch{H3O^+_{(aq)}}$ \textbf{common ion effect}, promoting the reverse 
+reaction even more. Thus, in polyprotic acids, we mainly only consider the first equilibrium reaction.
+In this case, the acid dissociation constant is
+\[
+    K_a=\frac{[\ch{H3O^+_{(aq)}}][\ch{H2PO4^-_{(aq)}}]}{\ch{H3PO4_{(aq)}}}
+\]
+The base dissociation is exactly the same as the acid dissociation constant. Given a weak base
+$\ch{B_{(aq)}}$
+\[
+    \ch{B_{(aq)}}+\ch{H2O_{(\ell)}}\rightleftharpoons \ch{BH^+_{(aq)}}+\ch{OH^-_{(aq)}}
+\]
+The dissociation constant is
+\[
+    K_b=\frac{[\ch{BH^+_{(aq)}}][\ch{OH^-_{(aq)}}]}{[\ch{B_{(aq)}}]}
+\]
+\begin{important}
+    Given $K_a$ and $K_b$, their product equals $K_w$. Keep in mind that $a$ and $b$ should be
+    the acid and conjugate base, or conjugate acid and base, respectively.
+    \[
+        (K_a)(K_b)=K_w
+    \]
+    For instance, consider acetic acid
+    \begin{align*}
+        (K_a)(K_b)&=\left(\frac{[\ch{H3O^+_{(aq)}}][\ch{CH3COO^-_{(aq)}}]}{\ch{CH3COOH_{(aq)}}}\right)\left(\frac{[\ch{CH3COOH_{(aq)}}][\ch{OH^-_{(aq)}}]}{[\ch{CH3COO^-_{(aq)}}]}\right)\\
+                  &=[\ch{H3O^+_{(aq)}}][\ch{OH^-_{(aq)}}]\\
+                  &=K_w
+    \end{align*}
+\end{important}
